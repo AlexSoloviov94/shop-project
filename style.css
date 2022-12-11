@@ -203,3 +203,107 @@ body {
     font-weight: 500px;
     color: white;
 }
+
+/* main container */
+
+.product-window {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.way {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+.way-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 100;
+}
+.name-sort {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-type-name {
+    margin-left: 15px;
+    line-height: 48px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+.sort-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 270px;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-right: 0;
+    background-color: #2c71b8;
+}
+.sort-link {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 100;
+}
+.sort-choose {
+    width: 10px;
+    color: white;
+}
+.sort-type-list {
+    width: 200px;
+    position: relative;
+}
+.sort-type-list > li {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.sort-type-list li:hover .submenu-sort-list {
+    display: block;
+}
+.sort-type-list > li > a {
+    display: block;
+    width: 100%;
+}
+.submenu-sort-list {
+    padding-top: 10px;
+    position: absolute;
+    left: -21px;
+    top: 100%;
+    border: 1px solid white;
+    border-top: none;
+    background-color: #2c71b8;
+    display: none;
+    z-index: 10;
+}
+.submenu-sort-list li{
+    font-size: 21px;
+    font-weight: 100;
+    width: 268px;
+    height: 40px;
+}
+.submenu-sort-list a:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+.submenu-sort-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+}
