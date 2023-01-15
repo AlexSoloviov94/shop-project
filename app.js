@@ -102,13 +102,26 @@ $(".slider-block").slick({
     dots: true,
 });
 
-window.addEventListener("scroll", openModalScroll);
+// window.addEventListener("scroll", openModalScroll);
 
-function openModalScroll() {
-    /*let scrollClientHeight;*/
-    if (window.pageYOffset > document.body.scrollHeight / 2) {
-        modal.classList.add("show");
-        modal.classList.remove("hide");
-        window.removeEventListener("scroll", openModalScroll);
+// function openModalScroll() {
+//     if (window.pageYOffset > document.body.scrollHeight / 2) {
+//         modal.classList.add("show");
+//         modal.classList.remove("hide");
+//         window.removeEventListener("scroll", openModalScroll);
+//     }
+// }
+
+function showModalByScroll() {
+    if (window.scrollY >= document.body.scrollHeight / 2) {
+        openModal();
+        window.removeEventListener("scroll", showModalByScroll);
     }
 }
+
+window.addEventListener("scroll", showModalByScroll);
+
+// setTimeout(openModal, 5000);
+// setInterval(openModal, 5000);
+
+AOS.init();
